@@ -1,0 +1,47 @@
+Geometry = GenFormat { 
+    <<< "geo_end.gen" 
+} 
+ 
+Hamiltonian = DFTB{ 
+   Charge = 0 
+   DampXH = Yes 
+   DampXHExponent = 4.0 
+   Dispersion = DftD3{ 
+      Damping = BeckeJohnson{} 
+   } 
+   Eigensolver = RelativelyRobust{} 
+   Filling = Fermi{ 
+      Temperature = 0.000950044603573917 
+   } 
+   HubbardDerivs = { 
+      C = -0.1492 
+      H = -0.1857 
+      O = -0.1575 
+   } 
+   KPointsAndWeights = {2 2 3 1.0} 
+   MaxAngularMomentum = { 
+      C = "p" 
+      H = "s" 
+      O = "p" 
+   } 
+   MaxSCCIterations = 1000 
+   SCC = Yes 
+   SCCTolerance = 0.0001 
+   SlaterKosterFiles = Type2FileNames{ 
+      LowerCaseTypeName = No 
+      Prefix = "./dftb-param/" 
+      Separator = "-" 
+      Suffix = ".skf" 
+   } 
+   ThirdOrderFull = Yes 
+   } 
+Options { 
+   WriteResultsTag = Yes 
+   } 
+ParserOptions { 
+   IgnoreUnprocessedNodes = No 
+   ParserVersion = 4 
+} 
+Analysis { 
+   CalculateForces = Yes  
+} 
