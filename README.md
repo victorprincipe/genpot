@@ -4,7 +4,7 @@ Here you will find the bulk of my work on creating a general-purpose machine lea
 
 Note: the file `CSD_GAP_model.json` is Aditi's preliminary baselined potential.
 
-# Guide to the enclosed directories and files
+## Guide to the enclosed directories and files
 
 General rule of thumb: Notebooks with capitalised letters at the start of each word are worthy of opening
 - If there aren't any capitalised letters, the notebook will likely be a messy
@@ -29,7 +29,7 @@ Other (maybe) useful notebooks are:
 - `dftb_calcs.ipynb`, used to calculate DFTB energies and forces for the CSD-1k test set and the _initial_ training set of ~24/6k structures (11 x 2238 configurations, with the 11 most diverse from each crystal selected via FPS)
 - `deepMD_potential.ipynb`, used to prepare files for use with DeepMD. Very scrappy notebook, so it might be better to ask Davide Tisi about how to create a deepMD potential as he has more experience.
 
-# Necessary packages to install
+## Necessary packages to install
 
 Please note that you will need the following packages to execute most of the notebooks:
 - ase
