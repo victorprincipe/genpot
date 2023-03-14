@@ -32,4 +32,12 @@ Other (maybe) useful notebooks are:
 # Necessary packages to install
 
 Please note that you will need the following packages to execute most of the notebooks:
-
+- ase
+- numpy
+- pandas
+- pickle
+- itertools
+- tqdm
+- sklearn
+- skmatter (previously called skcosmo)
+- librascal (installation instructions can be found at https://github.com/lab-cosmo/librascal) 
