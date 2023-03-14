@@ -4,6 +4,8 @@ Here you will find the bulk of my work on creating a general-purpose machine lea
 
 Note: the file `CSD_GAP_model.json` is Aditi's preliminary baselined potential.
 
+# Guide to the enclosed directories and files
+
 General rule of thumb: Notebooks with capitalised letters at the start of each word are worthy of opening
 - If there aren't any capitalised letters, the notebook will likely be a messy
 
@@ -13,7 +15,8 @@ There's quite a lot in this directory, but the notebook you should ___really___ 
 If you want to recreate the best performing direct-fit potential, you can open the notebook `Best_Direct_Fit_Potential.ipynb`.
 - This will be commented much less well than the `Best_Baselined_Potential.ipynb`, but it applies the exact same methodologies, and so if anything is unclear please look at that notebook and the comments.
 
-The `general_purpose_potential_part_x.ipynb` notebooks contain the process of developing/testing the direct-fit general-purpose potential.
+The `old_notebooks` directory contain messy notebooks related to developing general purpose potentials. The `Best_*` notebooks in the root directory contain the curated important information, but in case you would like to see the old ones for reference, they can be found here. In order to __properly execute these notebooks__, they will have to be __moved__ to the root directory!
+Within the directory, you will find the `general_purpose_potential_part_x.ipynb` notebooks, which contain the process of developing/testing the direct-fit general-purpose potential.
 - The first three notebooks create an initial potential
 - The notebooks thereafter have various tests/optimisations and create newer models from what I learnt, in order to improve performance
 - Again, please note that the `Best_X_Potential.ipynb` contain the methodology that led to the most performant potential
@@ -25,3 +28,8 @@ Other (maybe) useful notebooks are:
 - `create_PCA.ipynb`, used to create a Kernel PCA map of training and test set structures, to show that there are many abnormal structures in the training set. Also shows that the binding energies of elements as determined from the training set structures and test set structures differ.
 - `dftb_calcs.ipynb`, used to calculate DFTB energies and forces for the CSD-1k test set and the _initial_ training set of ~24/6k structures (11 x 2238 configurations, with the 11 most diverse from each crystal selected via FPS)
 - `deepMD_potential.ipynb`, used to prepare files for use with DeepMD. Very scrappy notebook, so it might be better to ask Davide Tisi about how to create a deepMD potential as he has more experience.
+
+# Necessary packages to install
+
+Please note that you will need the following packages to execute most of the notebooks:
+
